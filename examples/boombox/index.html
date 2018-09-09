@@ -51,11 +51,11 @@
 				// Called during construction to allow the app to populate the THREE.Scene
 				initializeScene(){
 					// Add a box on the floor
-					//const box = new THREE.Mesh(
-					//	new THREE.BoxBufferGeometry(0.1, 0.1, 0.1),
-					//	new THREE.MeshPhongMaterial({ color: '#DDFFDD' })
-					//  )
-					//  box.position.set(0, 0, 0)
+					const box = new THREE.Mesh(
+						new THREE.BoxBufferGeometry(0.1, 0.1, 0.1),
+						new THREE.MeshPhongMaterial({ color: '#DDFFDD' })
+					)
+					box.position.set(0, 0, 0)
 					this.floorGroup.add(box)
 
 					this.scene.background = new THREE.Color(0x222222)
