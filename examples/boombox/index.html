@@ -58,7 +58,7 @@
 					//  box.position.set(0, 0, 0)
 					this.floorGroup.add(box)
 
-					//this.scene.background = new THREE.Color(0x222222)
+					this.scene.background = new THREE.Color(0x222222)
 
 					// Add some lights to the scene
 					this.scene.add(new THREE.AmbientLight('#FFF', 0.2))
@@ -75,7 +75,7 @@
 						path + 'posz' + format, path + 'negz' + format
 					])
 					this.envMap.format = THREE.RGBFormat
-					//this.scene.background = this.envMap
+					this.scene.background = this.envMap
 
 					// Add the boom box
 					loadGLTF('../models/BoomBox/glTF-pbrSpecularGlossiness/BoomBox.gltf').then(gltf => {
